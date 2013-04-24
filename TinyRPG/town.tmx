@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="obj_misk_atlas" tilewidth="32" tileheight="32">
+  <image source="obj_misk_atlas.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="1025" name="terrain_atlas" tilewidth="32" tileheight="32">
+  <image source="terrain_atlas.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="2049" name="build_atlas" tilewidth="32" tileheight="32">
+  <image source="build_atlas.png" width="1024" height="1024"/>
+ </tileset>
+ <tileset firstgid="3073" name="meta_tiles" tilewidth="32" tileheight="32">
+  <image source="meta_tiles.png" width="64" height="32"/>
+  <tile id="0">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="ground" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJwzZ2VgMCcDd7OhYnLMwGUWueZhM4ccs3rYEJgYswip6yTBTdtYEGo62RB6e5D46OYR8s8mFlQ/rQTiVUh4NdScQhaIem0CZoLMQ3bLSTaIu2Hyp5HMQseK7KgYm5knkezfzgIxrwuHm0BmrAHKrWVDNQ9mJgwjixMy7wxQ7iwW85DNfMWGwF0EzOsFyr3BY14XG3ZMSvgNVgxy4yIoXozkXpjYqHlD2zwAWAGOaA==
+  </data>
+ </layer>
+ <layer name="ground-helper" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzlkrEOAUEQhq/YuwuVRIL+OhQqJLzBKVDgGVCIwtWoCd5A1JS8iUcRpZncbu63zp2jNMlf7L+z3+zOrGsZseFagUpSYzhXEYZRlL6bkOcCizkcaet7HrOQk9JqlT/gjSxf+MY03GcEYt5VPPciLlLA4hpDO1CL1nUznpMR4SzHDnIc4GHkaJ0HFUzf64vXmejBtW7CP6PeW9X4XG9G/lkEfVLRJq8j1RU+j3tYk8xsBE+FB/sT8KfA4xzFjOJdtHfqPP0f8Nke9wo0AJ5nRvNWtL+GHO5lXxPP5A7n1Ez5rhvyt1I70pFyT+bz3H+JOXEWUkv7vfdpvX1IHnqHhPf+d17TfuXpfzgJrxHCOyfgPQARXUEH
+  </data>
+ </layer>
+ <layer name="item" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFowA/2MAGwdQCF9ggeBSMglEwtAEAMYwDGQ==
+  </data>
+ </layer>
+ <layer name="buildings" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJztk0EKwjAQRcdFIT2G1YvY6kGaniztSWLxIFa8h38gA2nMwknBVT88Qgb+C4GEiMjXRPeIGTgwggloc0SnSfCRW5sLOi04h5WR2anA16NjwTWsNvJ1BT7JLerKGcMG3549/4oz+J9G3ztk3je7fIGPeyOYzHrGridYFD7psW8Gj7AXlw38Gp/4qvrbpfXJnV7gnXFpfGm3Bf0GX66bm30A9Xo1Xg==
+  </data>
+ </layer>
+ <layer name="buildings-helper" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBi6QJOTMv2qaPo9KTRvFIwCeoJWjoF2AXagDs1HlLgPWa87jfKlC5XDL4UK/lXlQMWkgoVcmGKUlJMHsZgHKyfVgDQACV4G/A==
+  </data>
+ </layer>
+ <layer name="tress-helper" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2DwgSo2BoZqIK5ho455s4DmzAbiOVQybxSMglHAwAAAzxkDZw==
+  </data>
+ </layer>
+ <layer name="trees" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApIBwAGQAAB
+  </data>
+ </layer>
+ <layer name="meta" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxj5GFgYCQTIwNyzcBmFqXmEWsWMfYQaw4+OwnJE2MePkDI75SahR5e5JiHS4xQGJEKyA3DoWgeJWkGn1mE8gi6PmLNImQeufmTHH1D1bzBhgG3bAt7
+  </data>
+ </layer>
+ <objectgroup name="exits" width="20" height="20">
+  <object name="exit" type="exit" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="destination" value="room"/>
+    <property name="startx" value="7"/>
+    <property name="starty" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
